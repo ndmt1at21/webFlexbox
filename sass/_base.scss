@@ -1,0 +1,59 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+    
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+    
+}
+
+$bp-huge: 120em;
+$bp-large: 75em;
+$bp-medium: 56.25em;
+$bp-small: 31.25em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+
+    @media only screen and (min-width: $bp-huge) {
+        font-size: 80%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    padding: 7rem 5rem;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-grey-dark-2);
+    line-height: 1.7;
+
+    @media only screen and (min-width: $bp-huge) {
+        padding: 15rem 10rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 0;
+    }
+}
